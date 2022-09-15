@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>F.BORDIER</title>
+  </head>
+
+  <body onload="load()">
+    <header>
+      <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li onclick="load()"><a href="#">Accueil</a></li>
+            <li onclick="afficher_cursus()">
+              <a href="#">Cursus professionel</a>
+            </li>
+            <li onclick="afficher_experience()">
+              <a href="#">Expérience développeur web</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12 tete">
+                <a href="#" class="btn" id="menu-toggle"
+                  ><i class="fas fa-bars"></i> Menu</a
+                >
+              </div>
+              <div id="profil">
+                <h1>BORDIER Fabien</h1>
+                <img src="images/profil.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="description">
+        <span class="title">Description</span>
+        <p class="text">
+          Bonjour,<br />j'ai 24 ans et j'habite à La Séguinière (49280). Je suis
+          actuellement en recherche d'emploi dans le domaine du Développeur
+          Full-Stack.<br />Actuellement je suis en capacité de développer en
+          <a href="https://fr.wikipedia.org/wiki/HTML5"
+            ><i class="fab fa-html5 fa-lg"></i
+          ></a>
+          (HTML 5)
+          <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+            ><i class="fab fa-css3-alt fa-lg"></i
+          ></a>
+          (Css)
+          <a href="https://fr.wikipedia.org/wiki/JavaScript"
+            ><i class="fab fa-js fa-lg"></i
+          ></a>
+          (Javascript) pour la <b>partie Front-End</b>.<br />
+          J'ai appris à développer la <b>partie Back-End</b> en
+          <a href="https://www.php.net/manual/fr/intro-whatis.php"
+            ><i class="fab fa-php fa-lg"></i
+          ></a>
+          (Php) avec des bases de données en
+          <a href="https://sql.sh/"
+            ><img src="https://img.icons8.com/glyph-neue/30/000000/sql.png"
+          /></a>
+          (SQL) et son Framework
+          <a href="https://symfony.com/"
+            ><i class="fab fa-symfony fa-lg"></i
+          ></a>
+          (Symfony).
+        </p>
+        <div>
+          <p>
+            Télécharger le Curriculum Vitae ici :
+            <a href="download/CV_Fabien_Bordier.pdf" download id="cv"
+              ><b class="contact">CV</b></a
+            >
+          </p>
+        </div>
+      </section>
+      <section id="cursus">
+        <span class="title">Cursus professionnel</span>
+        <p class="text">
+          <b>2020-2022 Formation Développeur web et Web mobile (ESECAD)</b><br />
+          A ce jour j’ai acquis les bases html
+          <i class="fab fa-html5 fa-lg"></i>, css
+          <i class="fab fa-css3-alt fa-lg"></i>, js
+          <i class="fab fa-js fa-lg"></i> je m'en sers notamment sur ce site.
+          J'ai eu une grosse partie de php <i class="fab fa-php fa-lg"></i> et
+          de son framework <i class="fab fa-symfony fa-lg"></i> (Symfony). Sans
+          oublier les bases de données qui sont de nos jours presque
+          primordiales. Et finalement j'ai eu un début d'apprentissage dans la
+          partie mobile avec React <i class="fab fa-react fa-lg"></i> et NodeJS
+          <i class="fab fa-node fa-lg"></i>.<br />
+        </p>
+        <p class="text">
+          <b>2016-2018 BTS Maintenance des Systèmes (obtenu en 2018)</b><br />
+          Initiation à la mécanique, l’électrique et au pneumatique avec une
+          analyse des dangers durant une intervention.
+        </p>
+        <p class="text">
+          <b>2013-2016 Lycée La Borde Basse / BAC PRO MEI (obtenu en 2016)</b
+          ><br />
+          J'ai appris à assurer la maintenance corrective et préventive sur des équipements industriels(surveillance, réparations), et
+          participer à leur amélioration et à leur modification.
+        </p>
+        <span class="title">Expérience professionnelle</span>
+        <p class="text">
+          <b>Mai-Juin 2022 Agent de Fabrication - 2B2F - Voltech</b><br />
+          Fabrication et montage de volets roulants.
+        </p>
+        <p class="text">
+          <b>Octobre-Décembre 2021 Agent de Fabrication - Ateliers DIXNEUF</b><br />
+          Fabrication de pièces de cheminée sur machine.
+        </p>
+        <p class="text">
+          <b>Mars-Avril 2021 Agent d'entretient en Résidence</b><br />
+          Entretien et nettoyage d'une résidence de 12 immeubles.
+        </p>
+        <p class="text">
+          <b>Mars-Septembre 2019 Opérateur de Production - Isover Saint Gobain</b><br />
+          Approvisionnement, réglage, surveillance et maintenance de premier niveau des installations.
+        </p>
+        <p class="text">
+          <b>Eté 2018 Accueil en camping municipal (Emploi d’été)</b><br />
+          Accueillir et encaisser les clients, nettoyage des espaces communs du camping.
+        </p>
+        <p class="text">
+          <b>2014 - 2018 Multiples stages - Marine Nationale/ Mont Roucous</b><br />
+          Stage en entreprise au sein de la Marine Nationale ainsi que de l'entreprise Mont Roucous durant ma scolarité.
+        </p>
+        
+      </section>
+      <section id="experience">
+        <span class="title">Expérience développeur web</span>
+        <p class="text">
+          À ce jour j'ai appris énormément de choses concernant la programmation
+          web, en travaillant seul ou même en groupe uniquement à distance.
+        </p>
+        <p class="text">
+          <b>HTML </b><i class="fab fa-html5 fa-lg"></i> / <b>CSS </b
+          ><i class="fab fa-css3-alt fa-lg"></i><br />
+          J'ai commencé par étudier les bases de développement en utilisant le HTML
+          pour structurer ma page web ainsi que le CSS pour la partie design et
+          l'agencement d'une page web.
+        </p>
+        <p class="text">
+          <b>PHP </b><i class="fab fa-php fa-lg"></i><br />
+          Par la suite j'ai exercé le PHP qui est un langage de programmation
+          web. Ce langage permet d'ouvrir beaucoup d'accès notamment en
+          utilisant des formulaires qui sont par la suite stockés dans une base
+          de données. L'affectation de fichiers csv, json est extrêmement utile
+          pour récupérer des valeurs à rajouter sur un site web.
+        </p>
+        <p class="text">
+          <b>JAVASCRIPT </b><i class="fab fa-js fa-lg"></i><br />
+          Après il y a eu le Javascript, un nouveau langage front-end. Son
+          principal atout est de supprimer le rechargement de page qui est
+          présent sur le Php. Grâce à ce langage je me suis servi des outils des
+          différents navigateurs qui mettent à disposition la Console, le
+          Network, etc... Javascript permet de créer des évènements dynamiques
+          sur les pages web.<br />
+        </p>
+        <p class="text">
+          <b
+            >BASE DE DONNEES
+            <img src="https://img.icons8.com/glyph-neue/30/000000/sql.png" /> /
+            NoSQL</b
+          ><br />
+          Les bases de données sont primordiales pour stocker les données des
+          utilisateurs ou bien stocker des données comme par exemple une liste
+          de tous les pays du monde avec leurs populations etc... De ce fait
+          j'ai utilisé MySQL sur PhpMyAdmin en créant des tables avec à
+          l'intérieur des colonnes. Grâce à cela je n'ai plus qu'à créer une
+          class DAO avec des requêtes SQL que ce soit en SELECT ou INSERT ou
+          UPDATE ou DELETE.<br />
+          La différence avec NoSQL c'est que les données stockées ne sont pas
+          reliées entre elles mais correspondent à des collections d'objets.
+          NoSQL est plus flexible et permissif, mais peut aussi entrainer des
+          problèmes de cohérence.
+        </p>
+        <p class="text">
+          <b>SYMFONY </b><i class="fab fa-symfony fa-lg"></i><br />
+          Ce framework permet
+          de développer et de sécuriser un site en utilisant un système de
+          route. Toutes mes pages sont gérées par un / des contrôleur(s). Ce
+          système permet alors de développer des fonctions différentes dans
+          chacun de ces contrôleurs. De plus il est souvent alimenté par la
+          communauté pour ajouter des nouvelles fonctionnalités.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <span class="title">Me contacter</span>
+      <div id="foot">
+        <div>
+          <p>
+            Téléphone : <span class="contact"><b>06.78.11.75.31</b></span>
+          </p>
+          <p>
+            Email : <span class="contact"><b>fabien.bordier.pro@gmail.com</b></span>
+          </p>
+        </div>
+        <div>
+          <a href="download/CV_Fabien_Bordier.pdf" download
+            ><b class="contact">CV</b></a
+          >
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script type="text/javascript" src="js/sidebar.js"></script>
+    <script>
+      $("#myModal").on("shown.bs.modal", function () {
+        $("#myInput").trigger("focus");
+      });
+    </script>
+  </body>
+</html>
